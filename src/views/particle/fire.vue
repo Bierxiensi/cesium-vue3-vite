@@ -36,7 +36,7 @@ const onClear = () => {
   fire.remove()
 }
 onUnmounted(() => {
-  fire.remove()
+  fire?.remove()
 })
 
 </script>

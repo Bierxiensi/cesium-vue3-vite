@@ -56,7 +56,7 @@ const onClear = () => {
 </script>
 <template>
   <operate-box>
-    <el-button type='primary' @click='create'>开始</el-button>
+    <el-button type='primary' @click="create">开始</el-button>
     <el-button type='primary' @click='onClear'>清除</el-button>
   </operate-box>
 </template>

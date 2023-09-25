@@ -25,7 +25,7 @@ let circleWave = new Radiant(viewer, "cirCleWave1");
 circleWave.add([...COORDINATE, 10], 'red', 1000, 3000);
 
 const onClear = () => {
-  circleWave.del("cirCleWave1")
+  circleWave?.del("cirCleWave1")
 }
 onUnmounted(() => {
   onClear()
@@ -33,7 +33,7 @@ onUnmounted(() => {
 </script>
 <template>
   <operate-box>
-    <el-button type='primary' @click='onStart'>开始</el-button>
+    <!-- <el-button type='primary' @click='onStart'>开始</el-button> -->
     <el-button type='primary' @click='onClear'>清除</el-button>
   </operate-box>
 </template>

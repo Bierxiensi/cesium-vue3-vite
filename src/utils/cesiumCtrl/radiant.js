@@ -177,4 +177,7 @@ export default class CircleWave extends Effect {
       },
     });
   }
+  del(id) {
+    this.viewer.entities.removeById(id); //删除entity
+  }
 }

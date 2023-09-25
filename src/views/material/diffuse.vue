@@ -25,7 +25,7 @@ const circleDiffusion = new CircleDiffusion(viewer, "circle");
 circleDiffusion.add([...COORDINATE, 10], "#F7EB08", 2000, 5000);
 
 const onClear = () => {
-  circleDiffusion.del("circle")
+  circleDiffusion.clear("circle")
 }
 onUnmounted(() => {
   onClear()
